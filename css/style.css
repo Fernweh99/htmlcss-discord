@@ -153,12 +153,15 @@ i {
     padding: 15px;
 }
 
-
 .jumbotron {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     min-height: 550px;
     text-align: center;
+}
+
+.logo img {
+    width: 120px;
 }
 
 .jumbotron p {
@@ -217,9 +220,18 @@ footer img {
     width: 25px;
 }
 
+span {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
 .footer-top {
     border-bottom: 2px solid var(--hrcol);
     padding-bottom: 30px;
+}
+
+.footer-bot {
+    padding-top: 30px;
 }
 
 .clm {
@@ -227,13 +239,13 @@ footer img {
     flex-direction: column;
 }
 
-span {
-    font-size: 14px;
-    margin: 0 5px;
-}
-
-.brand i{
+.brand i {
     margin-top: 20px;
     font-size: 20px;
     margin-right: 25px;
+}
+
+#sign-in {
+    color: white;
+    background-color: var(--cyan);
 }
