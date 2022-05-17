@@ -1,6 +1,6 @@
 /* Roots */
 :root {
-    --blue-header: #3161E0;
+    --blue-header: #255EE9;
     --black: #23272A;
     --cyan: #8EA1E1;
     --blue-text: #7289DA;
@@ -19,16 +19,16 @@
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
 .al-ctr {
     align-items: center;
 }
 
 .sp-btw {
     justify-content: space-between;
-}
-
-.flex{
-    display: flex;
 }
 
 .fb-30{
@@ -39,8 +39,26 @@
     flex-basis: 40%;
 }
 
+.w-45{
+    width: 45%;
+}
+
 .txt-rght{
     text-align: right;
+}
+
+/* buttons utilis*/
+.btn-sml {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+
+.btn-big {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-size: 20px;
 }
 
 /* Generics */
@@ -54,12 +72,26 @@ header {
 }
 
 section {
-    padding: 50px;
+    padding: 100px 0;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+h1,h2{
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+i {
+    margin-right: 15px;
 }
 
 /* header */
@@ -68,9 +100,30 @@ a {
     padding: 15px;
 }
 
+
+.jumbotron {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    min-height: 550px;
+    text-align: center;
+}
+
+.jumbotron p {
+    margin: 30px 0;
+}
+
+/* Buttons header */
 #log-in {
-    padding: 10px;
-    border-radius: 20px;
-    border: 1px solid white;
+    border-color: white;
     background-color: white;
+}
+
+#dw-mac {
+    background-color: white;
+    margin-right: 20px;
+}
+
+#op-in {
+    background-color: var(--black);
+    color: white;
 }
