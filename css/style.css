@@ -3,8 +3,9 @@
     --blue-header: #255EE9;
     --black: #23272A;
     --cyan: #8EA1E1;
-    --blue-text: #7289DA;
+    --blue-text: #6274B7;
     --grey: #F6F6F6;
+    --hrcol: #3A445F;
 }
 
 /* Reset */
@@ -24,6 +25,14 @@
     width: 45%;
 }
 
+.fs-10p {
+    font-size: 10px;
+}
+
+.my-30{
+    margin: 30px 0;
+}
+
 .txt-rght {
     text-align: right;
 }
@@ -40,11 +49,6 @@
     min-height: 900px;
 }
 
-.cont-85-ctr {
-    width: 85%;
-    margin: 0 auto;
-}
-
 .bg-white {
     background-color: white;
 }
@@ -56,6 +60,10 @@
 /* Flexbox utilis */
 .flex {
     display: flex;
+}
+
+.d-clm{
+    flex-direction: column;
 }
 
 .al-ctr {
@@ -106,9 +114,16 @@ section {
     padding: 100px 0;
 }
 
+footer {
+    background-color: var(--black);
+    padding: 80px 0;
+    color: white;
+}
+
 a {
     text-decoration: none;
     color: white;
+    line-height: 30px;
 }
 
 h1 {
@@ -117,12 +132,10 @@ h1 {
 }
 h2 {
     font-size: 49px;
-    margin: 30px 0;
 }
 
 h3 {
     font-size: 30px;
-    margin: 30px 0;
 }
 
 p {
@@ -177,4 +190,50 @@ i {
 main .dw-mac {
     background-color: var(--cyan);
     color: white;
+}
+    
+.cont-85-ctr {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer h2,footer h3 {
+    color: var(--blue-text);
+    font-weight: 700;
+}
+
+footer h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+footer img {
+    width: 25px;
+}
+
+.footer-top {
+    border-bottom: 2px solid var(--hrcol);
+    padding-bottom: 30px;
+}
+
+.clm {
+    flex-basis: calc(100%/4);
+    flex-direction: column;
+}
+
+span {
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.brand i{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 25px;
 }
